@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            var header = document.getElementById("header");
+            var logoImg = document.getElementById("logoImg");
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                header.classList.add('rounded');
+                logoImg.style.maxWidth = "100px";
+            } else {
+                header.classList.remove('rounded')
+                logoImg.style.maxWidth = "170px";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <nav id="header" class="navbar navbar-expand-sm fixed-top bg-white py-0">
+            <div class="container-fluid">
+                <div id="logo">
+                    <img id="logoImg" style="width: 170px;"
+                        src="https://peerconnexions.com/wp-content/uploads/2022/11/PC-Logo@3x.png" alt="">
+                </div>
+                <ul class="navbar-nav" style="position: relative;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="dropdown-big nav-item">
+                        <button class="nav-link dropbtn-big">Services</button>
+                        <div class="dropdown-big-content row" style="padding-left: 160px;">
+                            <div style="color: #2A73CC;
+              font-size: 14px;
+              font-weight: 700;">
+                                Services
+                            </div>
+                            <h4>
+                                Transform and digitalise the legacy models</h4>
+                            <div class="col-3">
+                                <ul style="list-style: none;">
+                                    <li class="big-link"><span class="menu-left">1</span>Distribution Channel Mapping
+                                    </li>
+                                    <li class="big-link"><span class="menu-left">2</span>Buyer / Seller registrations
+                                    </li>
+                                    <li class="big-link"><span class="menu-left">3</span>Products information
+                                        dissemination</li>
+                                    <li class="big-link"><span class="menu-left">4</span>Buy and Sell Motion</li>
+                                    <li class="big-link"><span class="menu-left">5</span>Software Subscription Sales
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <ul style="list-style: none;">
+                                    <li class="big-link"><span class="menu-left">6</span>Distribution Channel Mapping
+                                    </li>
+                                    <li class="big-link"><span class="menu-left">7</span>Buyer / Seller registrations
+                                    </li>
+                                    <li class="big-link"><span class="menu-left">8</span>Products information
+                                        dissemination</li>
+                                    <li class="big-link"><span class="menu-left">9</span>Buy and Sell Motion</li>
+                                    <li class="big-link"><span class="menu-left">10</span>Software Subscription Sales
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <ul style="list-style: none;">
+                                    <li class="big-link"><span class="menu-left">11</span>Distribution Channel Mapping
+                                    </li>
+                                    <li class="big-link"><span class="menu-left">12</span>Buyer / Seller registrations
+                                    </li>
+                                    <li class="big-link"><span class="menu-left">13</span>Products information
+                                        dissemination</li>
+                                    <li class="big-link"><span class="menu-left">14</span>Buy and Sell Motion</li>
+                                    <li class="big-link"><span class="menu-left">15</span>Software Subscription Sales
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <img src="https://peerconnexions.com/wp-content/uploads/elementor/thumbs/Mask-Group-65877-pzsfty7twj8ytwf2x04sawfyz6260qwkdxsln5hjs2.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown nav-item">
+                        <button class="nav-link dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#" style="width: 100%;">Blogs</a>
+                        </div>
+                    </li>
+                    <li class="nav-item align-items-center d-flex">
+                        <button class="nav-link"
+                            style="border-radius: 100px; line-height: 2rem; width: 3rem;background-color: white; border-color: #2A73CC;">
+                            <a href="search.html"><i style="font-size: 20px;color: #2A73CC;" class="fa fa-search"></i></a>
+                        </button>
+                    </li>
+                </ul>
+
+
+
+                <div id="loginBtn">
+                    <a style="text-decoration: none;"
+                        href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjcwMzgiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+                        class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                        <span class="elementor-button-content-wrapper">
+                            <span class="elementor-button-icon elementor-align-icon-left">
+                                <svg style="width: 1em; margin-right: 10px;" xmlns="http://www.w3.org/2000/svg"
+                                    width="13.556" height="15" viewBox="0 0 13.556 15">
+                                    <g data-name="Icon feather-user">
+                                        <path data-name="Path 11518"
+                                            d="M17.556 26.833v-1.444a2.889 2.889 0 0 0-2.889-2.889H8.889A2.889 2.889 0 0 0 6 25.389v1.444"
+                                            transform="translate(-5 -12.833)"
+                                            style="fill:none;stroke:#2a73cc;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px">
+                                        </path>
+                                        <path data-name="Path 11519"
+                                            d="M17.778 7.389A2.889 2.889 0 1 1 14.889 4.5a2.889 2.889 0 0 1 2.889 2.889z"
+                                            transform="translate(-8.111 -3.5)"
+                                            style="fill:none;stroke:#2a73cc;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px">
+                                        </path>
+                                    </g>
+                                </svg> </span>
+                            <a href="register.html" class="text-decoration-none"><span style="font-size: 12px;"
+                                    class="elementor-button-text">Login / Register</span></a>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="top">
+        <div class="top-details">
+            <h1 class="top-bold">We're connecting <br><span style="color: #2A73CC;">Talent with <br> Oppurtunity</span>
+            </h1>
+            <p class="top-text">Find the best talent for your organization quickly and efficiently.<br>Our innovative
+                platform offers a seamless experience for hiring managers and HR professionals, providing powerful tools
+                to source, evaluate, and collaborate on candidates.</p>
+        </div>
+    </div>
+
+    <!-- ..........................................................Empowering............................................................... -->
+
+    <div id="empower" class="container-fluid row mx-0 p-0">
+        <div id="empower-countries" class="col-6">
+            <h2>
+                Empowering Remote <br> Oppurtunities
+                <br>
+                in major countries
+            </h2>
+            <div class="empowering-btn-list">
+                <ul>
+                    <li>
+                        <a href="https://au.peerconnexions.com/account/login" target="_blank">
+                            <img decoding="async" class="flag"
+                                src="https://peerconnexions.com/wp-content/uploads/2023/06/Australia_icon.svg"
+                                alt="Australia">
+                            <span>Australia</span></a>
+                    </li>
+                    <li>
+                        <a href="https://in.peerconnexions.com/account/login" target="_blank">
+                            <img decoding="async" class="flag"
+                                src="https://peerconnexions.com/wp-content/uploads/2022/11/Group-66904.webp"
+                                alt="India">
+                            <span>India</span></a>
+                    </li>
+                    <li>
+                        <a href="https://id.peerconnexions.com/account/login" target="_blank">
+                            <img decoding="async" class="flag"
+                                src="https://peerconnexions.com/wp-content/uploads/2022/11/Group-66909.webp"
+                                alt="Indonesia">
+                            <span>Indonesia</span></a>
+                    </li>
+                    <li>
+                        <a href="https://ph.peerconnexions.com/account/login" target="_blank">
+                            <img decoding="async" class="flag"
+                                src="https://peerconnexions.com/wp-content/uploads/2022/11/Group-66906.webp"
+                                alt="Philippines">
+                            <span>Philippines</span></a>
+                    </li>
+                    <li>
+                        <a href="https://sg.peerconnexions.com/account/login" target="_blank">
+                            <img decoding="async" class="flag"
+                                src="https://peerconnexions.com/wp-content/uploads/2022/11/Group-66907.webp"
+                                alt="Singapore">
+                            <span>Singapore</span></a>
+                    </li>
+                    <li>
+                        <a href="https://lk.peerconnexions.com/account/login" target="_blank">
+                            <img decoding="async" class="flag"
+                                src="https://peerconnexions.com/wp-content/uploads/2022/12/lk.svg" alt="Srilanka">
+                            <span>Sri Lanka</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="img_container">
+            <div class="image-text-container">
+                <div class="text_main">
+                    <div class="heading">10,000+</div>
+                    <div class="subhead">NEW TALENT <br>ONBOARD DAILY</div>
+                </div>
+                <div class="text_main">
+                    <div class="heading">4,000+</div>
+                    <div class="subhead">JOBS ROLES ADDED DAILY</div>
+                </div>
+                <div class="text_main">
+                    <div class="heading">FAST GROWING</div>
+                    <div class="subhead">NUMBER OF RECRUITS</div>
+                </div>
+                <div class="text_main">
+                    <div class="heading">ADOPTED BY</div>
+                    <div class="subhead">INDUSTRY LEADERS</div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="empower-partners" class="col-6">
+            <h2>
+                Trusted bt leading <br> channel partners
+            </h2>
+            <img class="img-fluid" src="https://peerconnexions.com/wp-content/uploads/2023/01/Group-66913-2.png" alt=""
+                style="padding: 0 60px;">
+        </div>
+    </div>
+
+
+    <!-- ................................................Peer Connexion platform........................................................... -->
+
+    <div id="platform" class="text-white overflow-hidden">
+        <div class="platform-svg">
+            <div id="platform-above" class="text-center">
+                <div style="color: green;font-weight: 700; margin-bottom: 20px; font-size: large;">DIVE INTO</div>
+                <div style="font-size: 40px; margin-bottom:20px;">The Peer Connexions Platform</div>
+                <div style="max-width: 45vw; margin: auto; margin-bottom: 60px;">The platform is conceptualised and
+                    developed by
+                    industry veterans and domain experts to address the vast range of problems and challenges faced by
+                    manufacturers and all channel tiers with legacy channel distribution models.
+                </div>
+            </div>
+            <div class="platform-images row">
+                <div class="col-3 p-0">
+                    <img class="platform-img" src="pic1.svg" alt="">
+                </div>
+                <div class="col-3 p-0">
+                    <img class="platform-img" src="pic2.svg" alt="">
+                </div>
+                <div class="col-3 p-0">
+                    <img class="platform-img" src="pic3.svg" alt="">
+                </div>
+                <div class="col-3 p-0">
+                    <img class="platform-img" src="pic4.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="platform-details" class="row overflow-hidden">
+            <div class="platform-detail col-3">
+                <p class="platform-title">Co-Hosting</p>
+                <p class="elementor-icon-box-description platform-summary">
+                    Elevate your channel strategy with our cutting-edge platform, designed to bring manufacturers and
+                    all channel tiers together in a seamless, collaborative environment. Experience full transparency,
+                    real-time information sharing, and accountability like never before.<br><br>Stay ahead of the game
+                    with instant access to critical technical and commercial information, always up-to-date and at your
+                    fingertips. With Peer Connexions, you'll enjoy a new level of efficiency and effectiveness in your
+                    channel operations.
+                </p>
+            </div>
+            <div class="platform-detail col-3">
+                <p class="platform-title">Deep Functionality</p>
+                <p class="elementor-icon-box-description platform-summary">
+                    Our suite of powerful modules offers unparalleled functionality and flexibility to completely
+                    digitise every aspect of your channel operations.<br><br>
+                    Experience exceptional visibility, control, and financial benefits like never before.
+                </p>
+            </div>
+            <div class="platform-detail col-3">
+                <p class="platform-title">Emerging Revenue Models</p>
+                <p class="elementor-icon-box-description platform-summary">
+                    Effortlessly implement emerging revenue models, including hardware as-a-service, subscriptions, and
+                    annuity, with deep collaboration across all channel tiers.<br><br>Transform your brand with direct
+                    digital engagement with the most important final tier, and watch your brand share and customer
+                    loyalty soar.
+                </p>
+            </div>
+            <div class="platform-detail col-3">
+                <p class="platform-title">Optimised GTM for Manufacturers</p>
+                <p class="elementor-icon-box-description platform-summary">
+                    As a manufacturer, you'll enjoy a world of new revenue models, end-to-end data ownership, and
+                    streamlined, efficient workflows across all channel tiers.<br><br>Transform your decision-making
+                    process with the power of data-driven insights into channel behavior and enjoy reduced working
+                    capital, lower costs, and unparalleled protection against leakage.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ......................................................footer ....................................................................  -->
+
+
+    <div class="foot">
+        <div class="card-footer">
+            <marquee class="moving-text">
+                <span class="main-one-slide">DIGITAL TRANSFORMATION</span>
+                <span class="main-two-slide">DIGITAL TRANSFORMATION</span>
+                <span class="main-one-slide">DIGITAL TRANSFORMATION</span>
+                <span class="main-two-slide">DIGITAL TRANSFORMATION</span>
+                <span class="main-one-slide">DIGITAL TRANSFORMATION</span>
+                <span class="main-two-slide">DIGITAL TRANSFORMATION</span>
+                <span class="main-one-slide">DIGITAL TRANSFORMATION</span>
+                <span class="main-two-slide">DIGITAL TRANSFORMATION</span>
+                <span class="main-one-slide">DIGITAL TRANSFORMATION</span>
+                <span class="main-two-slide">DIGITAL TRANSFORMATION</span>
+            </marquee>
+            <div style="padding: 0 15% 0 15%;">
+                <div class="container row textEmail">
+                    <div id="foot-text-bold" class="col-6">
+                        Subscribe to the monthly newsletter.
+                        <br>
+                        <span style="font-weight: 400; font-size: 16px;">Receive latest news and updates every
+                            week</span>
+                    </div>
+                    <div id="foot-email" class="col-6">
+                        <input id="inField" size="40" placeholder="Enter your email address" value="" type="email"
+                            name="your-email">
+                        <input class="submit-icon" type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr style="color: white; opacity: 100%;">
+            <br>
+            <div class="foot-links container row">
+                <div class="p-1" style="width: 20%;">
+                    <h4 style="margin-bottom: 12px;">Top Services</h4>
+                    <ul class="link-style" style="list-style: none; padding: 0; line-height: 1.6;">
+                        <li>Distribution Channel Mapping</li>
+                        <li>Buyer / Seller registrations</li>
+                        <li>Products information <br> dissemination</li>
+                        <li>Buy and Sell motion</li>
+                        <li>Software subscription sales</li>
+                    </ul>
+                </div>
+                <div class="p-1" style="width: 16%;">
+                    <h4 style="margin-bottom: 12px;">Locations</h4>
+                    <ul class="link-style" style="list-style: none; padding: 0; line-height: 1.6;">
+                        <li>Australia</li>
+                        <li>India</li>
+                        <li>Indonesia</li>
+                        <li>Philippines</li>
+                        <li>Singapore</li>
+                        <li>Sri Lanka</li>
+                    </ul>
+                </div>
+                <div class="p-1" style="width: 24%;">
+                    <h4 style="margin-bottom: 12px;">Help</h4>
+                    <ul class="link-style" style="list-style: none; padding: 0; line-height: 1.6;">
+                        <li>Support</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div class="p-1" style="width: 20%;">
+                    <h4 style="margin-bottom: 12px;">Top Services</h4>
+                    <ul class="link-style" style="list-style: none; padding: 0; line-height: 1.6;">
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="p-1" style="width: 20%;">
+                    <h4 style="margin-bottom: 12px;">Write to us</h4>
+                    <ul class="link-style" style="list-style: none; padding: 0; line-height: 1.6;">
+                        <li><i class="fa fa-envelope"></i>info@peerconnexions.com</li>
+                        <li><i class="fa fa-linkedin-in"><i class="fa fa-youtube-square"></i></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <p class="copyright">© PEER CONNEXIONS HOLDING PTE. LTD., 2023. All rights Reserved. </p>
+    </div>
+
+</body>
+
+</html>

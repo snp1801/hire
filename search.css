@@ -1,0 +1,32 @@
+.reg-input {
+    font-size: 20px;
+    border: none;
+    border-radius: 0!important;
+    border-bottom: 2px solid #00000027;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+.search-icon {
+    font-size: 20px;
+}
+
+.tags {
+    border: none;
+    color: rgb(180, 180, 180);
+    background-color: rgb(230, 230, 230);
+}
+
+.candidate {
+    margin-top: 20px;
+    width: 24%;
+    margin-right: 1.3333%;
+    border-radius: 15px;
+    border: 1px solid rgb(201, 201, 201);
+}
+
+.candidate-btn {
+    width: 90%;
+    margin-bottom: 1rem;
+}

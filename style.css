@@ -1,0 +1,404 @@
+body {
+    background-color: white;
+    font-family: 'Montserrat';
+}
+
+
+div#logo {
+    width: 20%;
+}
+
+#loginBtn {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    fill: #2A73CC;
+    color: #2A73CC;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #2A73CC;
+    border-radius: 22px 22px 22px 22px;
+    padding: 10px 20px 10px 20px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 500!important;
+    color: #000000;
+}
+
+#header.rounded {
+    align-items: center;
+    border-radius: 200px!important;
+    width: 89%!important;
+    box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.1);
+    padding: 10px 30px 10px 30px;
+    top: 10px;
+    border: none;
+    margin: 0 auto;
+}
+
+.dropbtn, .dropbtn-big {
+    border: none;
+    transition: ease 0.4s;
+  }
+  
+  .dropdown, .dropdown-big {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    border-top: 2px solid #1366cd !important;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: ease 0.4s;
+  }
+
+  .dropdown-big-content {
+    border-top: 2px solid blue;
+    display: none;
+    left: -732px;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: ease 0.4s;
+  }
+  
+  .dropdown-content a, .dropdown-big-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover, .dropdown-big-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content, .dropdown-big:hover .dropdown-big-content {
+    display: flex;
+}
+  
+  .dropdown:hover .dropbtn, .dropdown-big:hover .dropbtn-big {opacity: 0.75;}
+
+.big-link {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+
+  span.menu-left {
+    background: #d6e9ff;
+    color: #2a73cc;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 16px;
+    line-height: 20px;
+}
+
+nav.navbar{
+    height: 80px;
+    padding: 10px 102px 10px 102px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #EFEFEF;
+}
+
+.nav-link {
+    line-height: 75px;
+}
+
+.nav-item {
+    padding-inline: 15px;
+}
+
+li.nav-item a.nav-link {
+    font-family: "Montserrat", Sans-serif;
+    font-weight: bold;
+}
+div#loginBtn button {
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+    border-radius: 100px;
+}
+
+.moving-text {
+    overflow: hidden;
+    line-height: 100px;
+}
+.foot {
+    background-color: #2a73cc;
+}
+.card-footer {
+    position: relative;
+    padding: 10px 102px 10px 102px;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.card-footer::before {
+    content: "";
+    background-image: url(https://peerconnexions.com/wp-content/uploads/2022/11/Group-66892.webp);
+    background-size: cover;
+    position: absolute;
+    background-position: center center;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.26;
+}
+
+.main-one-slide {
+    margin: 10px 20px 10px 20px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveText 4s linear infinite;
+    color: #ffffff;
+    font-size: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-weight: 700;
+}
+.main-two-slide {
+    margin: 10px 20px 10px 20px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveText 4s linear infinite;
+    color: #ffffff00;
+    font-size: 50px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    font-weight: 700;
+}
+
+/* CSS animation for moving text */
+@keyframes moveText {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;;
+    }
+}
+
+.textEmail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+}
+
+#foot-text-bold {
+    color: white;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.link-style {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#foot-email {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    position: relative;
+}
+
+#foot-email input {
+    padding: 0.75em 1.5em !important;
+    width: calc(100% + 50px);
+    flex-grow: 1;
+    border: none;
+    padding: 8px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+#foot-email .submit-icon {
+    font-size: 0 !important;
+    position: absolute;
+    right: 10px;
+    background: #000000;
+    background: url(https://peerconnexions.com/wp-content/uploads/2022/12/Peer_CTA_Arrow.svg);
+    background-color: #000000;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    height: 40px;
+    background-position: 10px 11px;
+    width: 40px;
+    padding: 0;
+    margin-top: 2px;
+}
+
+.foot-links {
+    color: white;
+}
+
+.copyright {
+    line-height: 1;
+    background-color: #1F2531;
+    padding: 10px;
+    margin-bottom: 0!important;
+    color: #FFFFFF;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 12px;
+}
+
+.card-footer {
+    padding-bottom: 60px;
+}
+#platform {
+    background-color: #04133b;
+}
+.platform-svg {
+    background-image: url(back.svg);
+}
+.platform-title {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 50px;
+}
+.platform-img {
+    padding-bottom: 30px;
+}
+.platform-images {
+    padding: 0 102px 0 102px;
+}
+.platform-detail {
+    padding-right: 40px;
+    padding-left: 0;
+}
+#platform-details {
+    padding: 0 102px;
+}
+#platform-above {
+    padding-top: 68px;
+}
+.platform-summary {
+    color: #C3C3C3;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+}
+
+#empower {
+    position: relative;
+    margin-top: 50px;
+    background-color: #e6f9ff;
+}
+
+#empower-countries {
+    color: white;
+    padding-left: 102px;
+    background-color: #2a73cc;
+    background-image: url(https://peerconnexions.com/wp-content/uploads/2022/11/Mask-Group-29.webp);
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+}
+
+ul li a img.flag {
+    width: calc(1.3vw + 0.4rem);
+}
+div.empowering-btn-list ul {
+    padding: 0!important;
+    list-style: none;
+}
+
+div.empowering-btn-list ul li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+div.empowering-btn-list ul li a{
+    text-decoration: none;
+    color: white;
+}
+div.empowering-btn-list ul li a span {
+    padding-left: 18px;
+    font-size: calc(1.2vw + 0.1rem);
+    font-weight: normal;
+}
+
+#empower-partners {
+    text-align: center;
+    padding-left: 10%;
+}
+#empower-countries h2, #empower-partners h2 {
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#empower-partners h2 {
+    font-weight: 700;
+}
+.img_container {
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-image: url(https://peerconnexions.com/wp-content/uploads/2022/11/Earth.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    height: 100%;
+}
+.image-text-container{
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100%;
+}
+
+.heading{
+    font-size: 30px;
+    font-weight: 700;
+}
+.subhead {
+    font-size: 14px;
+    line-height: 21px;
+}
+.text_main {
+    line-height: 1;
+}
+
+/* .......................................................top .................................................... */
+#top {
+    width: 82rem;
+    margin: auto;
+}
+
+.top-details {
+    max-width: 60%;
+    margin-bottom: 5rem;
+}
+
+.top-bold {
+    margin-top: 13.5rem;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.top-text {
+    line-height: 1.5rem;
+}

@@ -1,0 +1,27 @@
+.car-img {
+    height: 100vh;
+}
+
+#reg-details {
+    width: 60%;
+    margin: auto;
+}
+
+.reg-input {
+    border: none;
+    border-radius: 0!important;
+    border-bottom: 2px solid #00000027;
+    outline: none;
+    background: transparent;
+}
+
+form {
+    position: relative;
+}
+
+form i{
+    right: 10px;
+    position: absolute;
+    transform: translateY(-200%);
+    cursor: pointer;
+  }
